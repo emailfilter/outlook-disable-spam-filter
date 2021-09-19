@@ -9,7 +9,7 @@ setup(
     name='outlookdisablespamfilter',
     version=versioneer.get_version(),
     description='Disable Spam Filter on outlook.com by transfering emails from Junk mailbox to Inbox.',
-    url='https://github.com/jan-janssen/outlookdisablespamfilter',
+    url='https://github.com/emailfilter/outlook-disable-spam-filter',
     author='Jan Janssen',
     author_email='jan.janssen@outlook.com',
     license='BSD',
