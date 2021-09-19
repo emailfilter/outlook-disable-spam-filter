@@ -1,0 +1,22 @@
+name: Cron Job
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - run: pip install .
+      - run: outlookdisablespamfilter --outlook_email ${OUTLOOK_EMAIL} --outlook_app_password ${OUTLOOK_APP_PASSWORD}
+        env:
+          OUTLOOK_EMAIL: ${{ secrets.OUTLOOK_EMAIL }}
+          OUTLOOK_APP_PASSWORD: ${{ secrets.OUTLOOK_APP_PASSWORD }}
