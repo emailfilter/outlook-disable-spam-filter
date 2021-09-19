@@ -6,10 +6,10 @@ import versioneer
 
 
 setup(
-    name='pyimapsync',
+    name='outlookdisablespamfilter',
     version=versioneer.get_version(),
-    description='Transfer emails between multiple IMAP servers.',
-    url='https://github.com/jan-janssen/pysyncimap',
+    description='Disable Spam Filter on outlook.com by transfering emails from Junk mailbox to Inbox.',
+    url='https://github.com/jan-janssen/outlookdisablespamfilter',
     author='Jan Janssen',
     author_email='jan.janssen@outlook.com',
     license='BSD',
@@ -18,7 +18,7 @@ setup(
     cmdclass=versioneer.get_cmdclass(),
     entry_points={
         "console_scripts": [
-            'pyimapsync=pyimapsync.__main__:command_line_parser'
+            'outlookdisablespamfilter=outlookdisablespamfilter.__main__:command_line_parser'
         ]
     }
 )
