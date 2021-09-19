@@ -2,7 +2,7 @@
 Unfortunatley [Outlook.com](http://outlook.live.com) does not have an option to disable the online spam filter. So this repository includes a [scheduled Github Action](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events) to connect to the outlook servers and move the emails from the spam folder to the inbox. 
 
 ## Installation 
-- [Fork this repository](https://github.com/jan-janssen/outlook-disable-spam-filter/fork)
+- [Fork this repository](https://github.com/emailfilter/outlook-disable-spam-filter/fork)
 - Create two [encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets). The first named `OUTLOOK_EMAIL` for your outlook.com email address `username@outlook.com`. The second named `OUTLOOK_APP_PASSWORD` which includes your [outloop app password](https://support.microsoft.com/en-us/account-billing/using-app-passwords-with-apps-that-don-t-support-two-step-verification-5896ed9b-4263-e681-128a-a6f2979a7944)
 
 ## Testing 
